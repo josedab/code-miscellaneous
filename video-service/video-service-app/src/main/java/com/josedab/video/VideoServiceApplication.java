@@ -1,4 +1,4 @@
-package com.josedab;
+package com.josedab.video;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
