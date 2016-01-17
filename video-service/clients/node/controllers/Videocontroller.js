@@ -6,16 +6,16 @@ var url = require('url');
 var Videocontroller = require('./VideocontrollerService');
 
 
-module.exports.getCredentialsUsingGET1 = function getCredentialsUsingGET1 (req, res, next) {
-  Videocontroller.getCredentialsUsingGET1(req.swagger.params, res, next);
+module.exports.getVideosUsingGET = function getVideosUsingGET (req, res, next) {
+  Videocontroller.getVideosUsingGET(req.swagger.params, res, next);
 };
 
 module.exports.storeVideoUsingPOST = function storeVideoUsingPOST (req, res, next) {
   Videocontroller.storeVideoUsingPOST(req.swagger.params, res, next);
 };
 
-module.exports.getCredentialsUsingGET = function getCredentialsUsingGET (req, res, next) {
-  Videocontroller.getCredentialsUsingGET(req.swagger.params, res, next);
+module.exports.getVideoByIdUsingGET = function getVideoByIdUsingGET (req, res, next) {
+  Videocontroller.getVideoByIdUsingGET(req.swagger.params, res, next);
 };
 
 module.exports.updateVideoUsingPUT = function updateVideoUsingPUT (req, res, next) {

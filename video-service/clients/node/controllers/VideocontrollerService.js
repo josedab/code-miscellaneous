@@ -1,6 +1,6 @@
 'use strict';
 
-exports.getCredentialsUsingGET1 = function(args, res, next) {
+exports.getVideosUsingGET = function(args, res, next) {
   /**
    * parameters expected in the args:
    **/
@@ -39,7 +39,7 @@ var examples = {};
   
   
 }
-exports.getCredentialsUsingGET = function(args, res, next) {
+exports.getVideoByIdUsingGET = function(args, res, next) {
   /**
    * parameters expected in the args:
    * id (Long)

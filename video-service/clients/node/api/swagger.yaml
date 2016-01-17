@@ -19,8 +19,8 @@ paths:
     get:
       tags:
       - "video-controller"
-      summary: "getCredentials"
-      operationId: "getCredentialsUsingGET_1"
+      summary: "getVideos"
+      operationId: "getVideosUsingGET"
       consumes:
       - "application/json"
       produces:
@@ -72,8 +72,8 @@ paths:
     get:
       tags:
       - "video-controller"
-      summary: "getCredentials"
-      operationId: "getCredentialsUsingGET"
+      summary: "getVideoById"
+      operationId: "getVideoByIdUsingGET"
       consumes:
       - "application/json"
       produces:

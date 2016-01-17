@@ -31,11 +31,11 @@ import static org.springframework.http.MediaType.*;
 @Controller
 @RequestMapping(value = "/api", produces = {APPLICATION_JSON_VALUE})
 @Api(value = "/api", description = "the api API")
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringMVCServerCodegen", date = "2016-01-16T17:16:29.688-08:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringMVCServerCodegen", date = "2016-01-16T17:37:22.308-08:00")
 public class ApiApi {
   
 
-  @ApiOperation(value = "getCredentials", notes = "", response = Video.class, responseContainer = "List")
+  @ApiOperation(value = "getVideos", notes = "", response = Video.class, responseContainer = "List")
   @ApiResponses(value = { 
     @ApiResponse(code = 200, message = "OK"),
     @ApiResponse(code = 401, message = "Unauthorized"),
@@ -45,7 +45,7 @@ public class ApiApi {
     produces = { "*/*" }, 
     consumes = { "application/json" },
     method = RequestMethod.GET)
-  public ResponseEntity<List<Video>> getCredentialsUsingGET1()
+  public ResponseEntity<List<Video>> getVideosUsingGET()
       throws NotFoundException {
       // do some magic!
       return new ResponseEntity<List<Video>>(HttpStatus.OK);
@@ -75,7 +75,7 @@ public class ApiApi {
 
   
 
-  @ApiOperation(value = "getCredentials", notes = "", response = Video.class)
+  @ApiOperation(value = "getVideoById", notes = "", response = Video.class)
   @ApiResponses(value = { 
     @ApiResponse(code = 200, message = "OK"),
     @ApiResponse(code = 401, message = "Unauthorized"),
@@ -85,7 +85,7 @@ public class ApiApi {
     produces = { "*/*" }, 
     consumes = { "application/json" },
     method = RequestMethod.GET)
-  public ResponseEntity<Video> getCredentialsUsingGET(
+  public ResponseEntity<Video> getVideoByIdUsingGET(
 @ApiParam(value = "id",required=true ) @PathVariable("id") Long id
 
 )

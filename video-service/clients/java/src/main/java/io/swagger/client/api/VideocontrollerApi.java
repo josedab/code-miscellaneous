@@ -11,7 +11,7 @@ import io.swagger.client.model.Video;
 
 import java.util.*;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-16T17:15:09.398-08:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-16T17:37:17.007-08:00")
 public class VideocontrollerApi {
   private ApiClient apiClient;
 
@@ -33,11 +33,11 @@ public class VideocontrollerApi {
 
   
   /**
-   * getCredentials
+   * getVideos
    * 
    * @return List<Video>
    */
-  public List<Video> getCredentialsUsingGET1() throws ApiException {
+  public List<Video> getVideosUsingGET() throws ApiException {
     Object postBody = null;
     
     // create path and map variables
@@ -119,17 +119,17 @@ public class VideocontrollerApi {
   }
   
   /**
-   * getCredentials
+   * getVideoById
    * 
    * @param id id
    * @return Video
    */
-  public Video getCredentialsUsingGET(Long id) throws ApiException {
+  public Video getVideoByIdUsingGET(Long id) throws ApiException {
     Object postBody = null;
     
      // verify the required parameter 'id' is set
      if (id == null) {
-        throw new ApiException(400, "Missing the required parameter 'id' when calling getCredentialsUsingGET");
+        throw new ApiException(400, "Missing the required parameter 'id' when calling getVideoByIdUsingGET");
      }
      
     // create path and map variables
