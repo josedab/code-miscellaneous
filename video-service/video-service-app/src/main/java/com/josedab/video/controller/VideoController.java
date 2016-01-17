@@ -28,13 +28,13 @@ public class VideoController {
 
     @RequestMapping(value = "/videos", method = RequestMethod.GET)
     @ResponseBody
-    public List<Video> getCredentials() {
+    public List<Video> getVideos() {
         return videoRepository.findAll();
     }
     
     @RequestMapping(value = "/videos/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public Video getCredentials(
+    public Video getVideoById(
             @PathVariable(value="id") long id) {
         return videoRepository.findOne(id);
     }
