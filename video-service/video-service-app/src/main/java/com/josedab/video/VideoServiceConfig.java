@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class VideoServiceConfig {
     
     @Bean
-    public Docket newsApi() {
+    public Docket videoApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("Api")
                 .apiInfo(apiInfo())
